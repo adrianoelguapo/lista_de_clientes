@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* --- Estilos generales --- */
+body{
+    background-color: rgb(176, 174, 174);
+}
+
+.contenedor{
+    width: 100%;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- Estilos para la cabecera --- */
+.cabecera{
+    font-size: 25px;
+    background-color: gray;
+    gap: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+/* --- Estilos para el buscador --- */
+.busqueda{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+    gap: 5%
+}
+
+.busqueda .buscador{
+    width: 20%;
+}
+
+.busqueda .buscador,
+.busqueda .boton{
+    padding: 1%;
+    border-radius: 10px;
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- Estilos para las tarjetas y su disposición --- */
+.clientes {
+    width: 80%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 13%;
+    min-height: 98vh;
+}
+
+.tarjeta {
+    width: 30%;
+    height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.fotocliente {
+    width: 50%;
+    height: 100%;
+}
+
+.fotocliente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.datoscliente {
+    width: 50%;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nombrecliente {
+    font-size: 30px;
+    text-align: center;
+}
+
+.apellidoscliente {
+    font-size: 18px;
+    text-align: center;
+}
+
+.descripcioncliente {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* --- Estilos para el footer --- */
+footer{
+    margin-top: 1%;
+    background-color: gray;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
