@@ -10,6 +10,9 @@ body{
     font-family: "Questrial", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
 /* --- Estilos para la cabecera --- */
@@ -29,15 +32,12 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 2%;
+    margin-bottom: 2%;
     gap: 5%
 }
 
 .busqueda .buscador{
-    width: 20%;
-}
-
-.busqueda .buscador,
-.busqueda .boton{
+    width: 40%;
     padding: 1%;
     border-radius: 10px;
     font-family: "Questrial", sans-serif;
@@ -49,16 +49,15 @@ body{
 .clientes {
     width: 80%;
     margin-top: 3%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    margin-top: 1%;
     justify-content: flex-start;
     gap: 15px;
-    margin-left: 13%;
-    min-height: 98vh;
 }
 
 .tarjeta {
-    width: 30%;
     height: 32vh;
     display: flex;
     justify-content: space-around;
@@ -106,7 +105,6 @@ body{
 
 /* --- Estilos para el footer --- */
 footer{
-    margin-top: 1%;
     background-color: gray;
     padding-top: 0.25%;
     padding-bottom: 0.25%;

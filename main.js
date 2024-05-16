@@ -73,7 +73,7 @@ $(function(){
         $(".clientes").append('<div class = "tarjeta">' + '<div class = "fotocliente">' + '<img src = "' + clientes[i].foto + '">' + '</div>' + '<div class = "datoscliente">' + '<div class = "nombrecliente">' + '<p>' + clientes[i].nombre +'</p>' + '</div>' + '<div class = "apellidoscliente">' + '<p>' + clientes[i].apellidos +'</p>' + '</div>' + '<div class = "descripcioncliente">' + '<p>' + clientes[i].descripcion +'</p>' + '</div>' + '</div>' + '</div>')
     } 
 
-    $(".boton").click(function(){
+    $(".buscador").keyup(function(){
         let valorBusqueda = $(".buscador").val();
         $(".clientes").empty();
 
